@@ -448,5 +448,20 @@ let Constructions = {
         "Value1": 5,
         "Value2": 1,
         "Value3": 0
+    },
+	"Construction_Water4": {
+        "BuildComplete": "VFX_BuildComplete_Wood",
+        "BuildVFX": "VFX_BuildLoop",
+        "CraftingText": "Making",
+        "Id": 4006,
+        "Name": "Construction_Water4",
+        "ProximityBonus": "None",
+        "Req1": "Water",
+        "Req2": "none",
+        "Req3": "none",
+        "Time0": 12,
+        "Value1": 4,
+        "Value2": 0,
+        "Value3": 0
     }
 }

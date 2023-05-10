@@ -1,12 +1,9 @@
+
 body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
-    padding: 20px;
     background-color: rgba(32,33,35,100);
-    position: relative;
 }
 
 h1 {
@@ -29,10 +26,13 @@ h1 {
     width: 200px;
     height: 100px;
 }
-
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin:0;
+}
 .totals-container {
     display: flex;
-    justify-content: space-evenly;
     margin: 20px 0;
     position: absolute;
     top: 70px;
@@ -56,19 +56,16 @@ h1 {
         margin-top: 0;
         font-size: 18px;
         font-weight: 600;
+		color: #202123;
     }
 
     .totals-div p {
         font-size: 14px;
         padding: 0px;
         margin: 0px;
+		line-height: 16px;
     }
 
-.container {
-    width: 100%;
-    max-width: 100%;
-    margin:0;
-}
 
 .select-tree-container {
     display: flex;
@@ -82,24 +79,27 @@ h1 {
         font-size: 14px;
     }
 
-#itemSelect {
-    width: 250px;
-    background-color: #bfbfbf;
+select{
+	width: 250px;
+	font-weight: 600;
+	background-color: #b7ab95;
+}
+
+select:focus {
     font-weight: 600;
+	background-color: #b7ab95;
+  }
+
+#itemSelect {
+    
 }
 
 #strategy-select {
     margin-bottom: 10px;
-    width: 250px;
-    background-color: #bfbfbf;
-    font-weight: 600;
 }
 
 #view-select {
     margin-bottom: 10px;
-    width: 250px;
-    background-color: #bfbfbf;
-    font-weight: 600;
 }
 
 .tf-tree {
@@ -107,6 +107,11 @@ h1 {
     position: relative;
     overflow:hidden;
     width: 100%;
+	min-height: 350px;
+}
+
+.tf-tree ul{
+	padding: 0px;
 }
 
 .grab {
@@ -141,11 +146,12 @@ h1 {
 }
 
 .tf-nc p {
-    font-size: 10px;
+    font-size: 12px;
+	line-height: 13px;
 }
 
 .tf-nc h4 {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 600;
 }
 
@@ -171,7 +177,6 @@ h1 {
 .tf-tree li li:before,
 .tf-tree li li:after {
     border-width: 2px;
-    border-style: wave;
     border-color: #bfbfbf;
 }
 
@@ -202,17 +207,3 @@ h1 {
     z-index: 1;
 }
 
-/*.zoom-controls {
-    display: flex;
-    gap: 5px;
-    margin-bottom: 10px;
-}
-
-    .zoom-controls button {
-        background-color: #ffffff;
-        border: 1px solid #000000;
-        border-radius: 3px;
-        font-size: 18px;
-        padding: 2px 6px;
-        cursor: pointer;
-    }*/
