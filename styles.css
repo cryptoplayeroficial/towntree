@@ -75,7 +75,7 @@ h1 {
     margin: 10px 0;
     width: 100%;
 	line-height: 1em;
-	color: #664e4e !important
+	
 }
 
     .select-tree-container label {
@@ -86,6 +86,7 @@ select{
 	width: 250px;
 	font-weight: 600;
 	background-color: #b7ab95;
+	color: #664e4e !important
 }
 
 select:focus {
