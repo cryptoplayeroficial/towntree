@@ -13,60 +13,26 @@ h1 {
     color: #bfbfbf;
 }
 
-.total-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px;
-    width: 200px;
-    height: 100px;
-}
+/* .total-card { */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* background-color: white; */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
+    /* border-radius: 8px; */
+    /* padding: 10px; */
+    /* margin: 10px; */
+    /* width: 200px; */
+    /* height: 100px; */
+/* } */
+
 .container {
     width: 100%;
     max-width: 100%;
     margin:0 auto !important;
 	padding: 0px !important;
 }
-.totals-container {
-    display: flex;
-    margin: 20px 0;
-    position: absolute;
-    top: 70px;
-    right: 10px;
-}
-
-.totals-div {
-    border: 1px solid #ccc;
-    padding: 5px;
-    margin-left: 20px;
-    border-radius: 5px;
-    color: #202123;
-    background-color: #bfbfbf;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    float: left;
-    max-height: 200px;
-    overflow-y: auto;
-}
-
-    .totals-div h4 {
-        margin-top: 0;
-        font-size: 18px;
-        font-weight: 600;
-		color: #202123;
-    }
-
-    .totals-div p {
-        font-size: 14px;
-        padding: 0px;
-        margin: 0px;
-		line-height: 16px;
-    }
-
 
 .select-tree-container {
     display: flex;
@@ -74,29 +40,42 @@ h1 {
     align-items: center;
     margin: 10px 0;
     width: 100%;
-	line-height: 1em;
-	
+	line-height: 1.2em;
+	font-weight: 800;
+	font-size: 18px;
 }
 
     .select-tree-container label {
-        font-size: 14px;
+        font-size: 18px;
+		font-weight: 700;
+    }
+
+	.select-tree-container option {
+        text-align:center;
+		font-weight: 600;
     }
 
 select{
-	width: 250px;
 	font-weight: 600;
 	background-color: #b7ab95;
-	color: #664e4e !important
+	color: rgba(32,33,35,100) !important;
+    width: 50%;
+	max-width: 600px;
+    padding: 5px;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    height: 2.5rem
 }
 
 select:focus {
     font-weight: 600;
 	background-color: #b7ab95;
   }
-
-#itemSelect {
-    
-}
+  
+  select:hover {
+    font-weight: 700;
+	background-color: #9e9e9e;
+  }
 
 #strategy-select {
     margin-bottom: 10px;
@@ -106,12 +85,68 @@ select:focus {
     margin-bottom: 10px;
 }
 
+.totals-container {
+	width: 100%;
+    display: inline-grid;
+    margin: 0 auto;
+}
+	.totals-container details{
+		background-color: #b7ab95;
+	}
+
+.totals-div {
+	width: 50%;
+	max-width: 600px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px auto;
+    border-radius: 5px;
+    background-color: #bfbfbf;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-height: 600px;
+    overflow-y: auto;
+	color: rgba(32,33,35,100) !important;
+}
+	
+    .totals-div summary {
+        margin-top: 0;
+        font-size: 18px;
+        font-weight: 700;
+		color: #202123;
+    }
+
+    .totals-div p {
+        font-size: 16px;
+		font-weight: 600;
+        padding: 0px;
+        margin: 0px;
+		line-height: 16px;
+    }
+
 .zoom-controls{
 	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.zoom-controls button{
+	background-color: #b7ab95;
+    color: rgba(32, 33, 35, 100);
+    border: none;
+    padding: 5px 10px;
+	margin: 5px; 
+    border-radius: 2px;
+    font-size: 16px;
+	font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;	
+}
+.zoom-controls button:hover{
+	background-color: #9e9e9e;
 }
 
 .tf-tree {
-    border: dotted #ff6a00 3px;
+    border: dotted #b7ab95 3px;
     position: relative;
     overflow:hidden;
     width: 100%;
@@ -129,7 +164,6 @@ select:focus {
 .grabbing {
     cursor: grabbing;
 }
-
 
 .tf-tree-content {
     transform-origin: top left;
@@ -222,6 +256,7 @@ select:focus {
         right: auto;
         margin-top: 20px;
 		flex-direction: column;
+		width: 100%;
     }
 	
 	.totals-div {
@@ -233,7 +268,12 @@ select:focus {
 		background-color: #bfbfbf;
 		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 		max-height: 600px;
+		width: 90%;
 		overflow-y: auto;
+	}
+	select{
+		width: 90%;
+		font-size: 15px;
 	}
 }
 
