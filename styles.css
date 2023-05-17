@@ -29,7 +29,8 @@ h1 {
 .container {
     width: 100%;
     max-width: 100%;
-    margin:0;
+    margin:0 auto !important;
+	padding: 0px !important;
 }
 .totals-container {
     display: flex;
@@ -73,6 +74,7 @@ h1 {
     align-items: center;
     margin: 10px 0;
     width: 100%;
+	line-height: 1em;
 }
 
     .select-tree-container label {
@@ -100,6 +102,10 @@ select:focus {
 
 #view-select {
     margin-bottom: 10px;
+}
+
+.zoom-controls{
+	display: flex;
 }
 
 .tf-tree {
@@ -217,16 +223,16 @@ select:focus {
     }
 	
 	.totals-div {
-    border: 1px solid #ccc;
-    padding: 5px;
-	margin-bottom: 8px;
-    border-radius: 5px;
-    color: #202123;
-    background-color: #bfbfbf;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    max-height: 600px;
-    overflow-y: auto;
-}
+		border: 1px solid #ccc;
+		padding: 5px;
+		margin-bottom: 8px;
+		border-radius: 5px;
+		color: #202123;
+		background-color: #bfbfbf;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+		max-height: 600px;
+		overflow-y: auto;
+	}
 }
 
 
