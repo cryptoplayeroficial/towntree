@@ -5081,7 +5081,7 @@ let Buildings = {
                         Construction: "Construction_Double_Lumber",
                         CraftReqsMet: !1,
                         CraftTimeMod: 1,
-                        Crafts: "Pizza_Base,Shrimp_Pizza",
+                        Crafts: "Pizza_Base,Shrimp_Pizza,Four_Cheese_Pizza",
                         Description: "A Builder will bring materials to a construction site.",
                         DestroyCost: 625,
                         Destroyable: !0,

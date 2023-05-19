@@ -1,5 +1,5 @@
-let Items = {
-                    "350k_Stars": {
+                    let Items = {
+					"350k_Stars": {
                         CityPoints: 0,
                         CityPrice: 0,
                         Class: "Produced",
@@ -430,7 +430,7 @@ let Items = {
                         Value1: 2,
                         Value2: 1,
                         Value3: 0,
-                        FileUrl: "files/assets/43726741/1/icon_pinotNoirGrapes.png"
+                        FileUrl: "files/assets2/cheese.png"
                     },
                     Chocolate_Bar: {
                         CityPoints: 250,
@@ -1031,6 +1031,30 @@ let Items = {
                         Value2: 2,
                         Value3: 3,
                         FileUrl: "files/assets/98540886/1/icon_foodParcel.png"
+                    },
+                    Four_Cheese_Pizza: {
+                        CityPoints: 42e3,
+                        CityPrice: 22e4,
+                        Class: "Produced",
+                        CraftingText: "Growing",
+                        Id: 3045,
+                        Name: "Four_Cheese_Pizza",
+                        OnDestroy: "Grapes_VFX",
+                        ProximityBonus: "None",
+                        ProximityPenalty: "None",
+                        ProximityReverse: !1,
+                        Req1: "Pizza_Base",
+                        Req2: "Cheese",
+                        Req3: "Tomato",
+                        Time0: 60,
+                        Time1: 120,
+                        Time2: 240,
+                        Time3: 480,
+                        Type: "Auto",
+                        Value1: 1,
+                        Value2: 2,
+                        Value3: 5,
+                        FileUrl: "files/assets2/four_cheese_pizza.png"
                     },
                     Gasoline: {
                         CityPoints: 8,
@@ -2209,9 +2233,9 @@ let Items = {
                         FileUrl: "files/assets/106782044/1/icon_shrimp.png"
                     },
                     Shrimp_Pizza: {
-                        CityPoints: 45e3,
-                        CityPrice: 2e5,
-                        Class: "Crop",
+                        CityPoints: 1300,
+                        CityPrice: 12e4,
+                        Class: "Produced",
                         CraftingText: "Growing",
                         Id: 3045,
                         Name: "Shrimp_Pizza",
@@ -2447,7 +2471,7 @@ let Items = {
                         Value1: 3,
                         Value2: 0,
                         Value3: 0,
-                        FileUrl: "files/assets2/tomatoes.png"
+                        FileUrl: "files/assets2/tomato.png"
                     },
                     Tomato_Paste: {
                         CityPoints: 150,
@@ -2471,7 +2495,7 @@ let Items = {
                         Value1: 1,
                         Value2: 3,
                         Value3: 0,
-                        FileUrl: "files/assets/43726741/1/icon_pinotNoirGrapes.png"
+                        FileUrl: "files/assets2/tomato_paste.png"
                     },
                     Tractor_Speed: {
                         CityPoints: 0,
@@ -2857,4 +2881,4 @@ let Items = {
                         Value3: 0,
                         FileUrl: "files/assets/128779922/1/icon_worms.png"
                     }
-                }
+					}
