@@ -1,6 +1,3 @@
 *.bat
-preapp.js
-prebuildings.js
-preitems.js
-preconstructions.js
+src/
 preindex.html
